@@ -1,8 +1,8 @@
 import socket
 
 # Configuration
-LISTEN_HOST = '0.0.0.0'  # Listen on all available interfaces
-LISTEN_PORT = 443  # Port to listen on
+LISTEN_HOST = '0.0.0.0'  # LHOST >> Change this For Your Local IP 
+LISTEN_PORT = 443  # Change the Listening Port
 
 def create_listener(host, port):
     server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
