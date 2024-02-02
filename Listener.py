@@ -10,13 +10,13 @@ def create_listener(host, port):
     server.listen(1)
     print(f"Listening on {host}:{port}...")
     client_socket, client_address = server.accept()
-    print(f"Connection from {client_address} established.")
+    print(f"Target {client_address} is Connected.")
     return client_socket
 
 def receive_and_send_commands(conn):
     try:
         while True:
-            command = input("Enter command to send: ")
+            command = input("Enter command : ")
             if command.lower() == 'exit':
                 conn.send(command.encode('utf-8'))
                 break
